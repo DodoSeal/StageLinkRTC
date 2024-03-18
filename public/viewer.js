@@ -1,6 +1,4 @@
-window.onload = () => {
-    init();
-};
+init();
 
 async function init() {
     const peer = createPeer();
@@ -11,7 +9,7 @@ function createPeer() {
     const peer = new RTCPeerConnection({
         iceServers: [
             {
-                urls: "stun:stun.l.google.com:19302"
+                urls: "stun:stun4.l.google.com:19302"
             }
         ]
     });
